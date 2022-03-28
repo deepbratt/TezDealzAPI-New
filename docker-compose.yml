@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  tezdealzapi:
+    build: './'
+    ports:
+      - '3004:3004'
+    networks:
+      - ms_network
+networks:
+  ms_network:
+    driver: bridge
+    name: ms_network

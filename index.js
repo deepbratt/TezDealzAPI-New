@@ -72,6 +72,7 @@ app.use(compression());
 app.use(userRoute, userRouter);
 app.use(ticketRoutes,ticketRouter);
 app.use(appointmentsRoute,appointmentsRouter);
+app.use(adsRoutes, adsRouter);
 app.all('*', (req, res, next) => {
   next(new AppError(`can't find ${req.originalUrl} on this server`, 404));
 });
