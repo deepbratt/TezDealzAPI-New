@@ -33,7 +33,7 @@ const adsRouter = require("./routes/ads/carRoutes");
 
 const PORT = 3004; // port
 const app = express();
-const receivers = require("./utils/rabbitMq");
+const receivers = require("./utils/rabbitMQ");
 // Security HTTP Headers
 app.use(helmet());
 
